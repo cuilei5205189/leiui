@@ -19,18 +19,20 @@ $ yarn add lei-ui
 
 ## 使用
 
-如果使用了 npm / yarn 安装，一般在 main.js 中如下配置
+如果使用了 npm / yarn 安装，一般在 main.js 中如下配置：
 
 ```javascript
 import Vue from 'vue'
 import App from 'components/app.vue'
 import Lei from 'lei-ui'
+import 'lei-ui/lib/lei-ui.css'
 Vue.use(Lei)
 new Vue({
   el: '#app',
   render: h => h(App)
 })
 ```
+以上代码便完成了 Lei-ui 的引入。需要注意的是，样式文件需要单独引入。
 
 ## 特别提醒
 
